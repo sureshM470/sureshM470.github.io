@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Suresh Manepalli - Portfolio</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Suresh Manepalli</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#awards">Awards &amp; Recognitions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Personal Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mt-5">
+    <section id="about" class="mb-5">
+      <div class="row align-items-center">
+        <!-- Left Column: Profile & About Me -->
+        <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+          <img src="assets/profile-pic.png" alt="Suresh Manepalli" class="rounded-circle border shadow"
+            style="width: 180px; height: 180px; object-fit: cover;"
+            onerror="this.onerror=null;this.src='assets/default-profile.svg';">
+
+          <h3>Suresh Manepalli</h3>
+          <p class="text-muted">C/C++ & Android Developer</p>
+          <a href="Resume Suresh 2025.docx" class="btn btn-outline-primary btn-lg fw-semibold rounded-pill px-4 mt-3"
+            download>
+            <i class="bi bi-download me-2"></i> Download Resume
+          </a>
+
+          <h2 class="mt-4">About Me</h2>
+          <p>
+            Software Engineer with 8+ years’ experience in Android and Embedded Systems, passionate about building
+            reliable and scalable solutions.
+          </p>
+          <p>
+            Always eager to learn, solve complex problems, and deliver high-quality products.
+          </p>
+        </div>
+        <!-- Right Column: Carousel -->
+        <div class="col-md-6">
+          <div id="aboutProjectsCarousel" class="carousel slide mt-4 mt-md-0" data-bs-ride="carousel"
+            style="max-width: 100%; margin: 0 auto;">
+            <div class="carousel-inner">
+              <!-- New Water Level Controller Carousel Item -->
+              <div class="carousel-item active">
+                <a target="_blank">
+                  <div style="width: 100%; height: 360px; overflow: hidden;">
+                    <img src="assets/smart_water_level_controller.png" class="d-block w-100 rounded" alt="Smart Wireless Water Level Controller"
+                      style="height: 100%; object-fit: cover;">
+                  </div>
+                </a>
+                <div class="carousel-caption d-none d-md-block w-100 position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-75 px-3 py-2 rounded-0" style="left:0; right:0;">
+                  <h5 class="text-white mb-1" style="font-size:1.1rem;">Smart Wireless Water Level Controller</h5>
+                  <p class="text-white mb-0" style="font-size:0.95rem;">Embedded system with wireless sensor and Android control for automated water level management.</p>
+                </div>
+              </div>
+              <!-- WiFi IR Remote Prototype Carousel Item -->
+              <div class="carousel-item">
+                <a target="_blank">
+                  <div style="width: 100%; height: 360px; overflow: hidden;">
+                    <img src="assets/WIFI_IR_remote.jpg" class="d-block w-100 rounded" alt="WiFi IR Remote Prototype"
+                      style="height: 100%; object-fit: cover;">
+                  </div>
+                </a>
+                <div class="carousel-caption d-none d-md-block w-100 position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-75 px-3 py-2 rounded-0" style="left:0; right:0;">
+                  <h5 class="text-white mb-1" style="font-size:1.1rem;">WiFi IR Remote Prototype</h5>
+                  <p class="text-white mb-0" style="font-size:0.95rem;">Prototype of a WiFi-enabled IR remote controller for smart home automation, featuring custom PCB design and ESP8266 integration.</p>
+                </div>
+              </div>
+              <!-- WiFi Dimmer Switch Carousel Item -->
+              <div class="carousel-item">
+                <a target="_blank">
+                  <div style="width: 100%; height: 360px; overflow: hidden;">
+                    <img src="assets/WIFI_Dimmer_Switch.png" class="d-block w-100 rounded" alt="WiFi Dimmer Switch"
+                      style="height: 100%; object-fit: cover;">
+                  </div>
+                </a>
+                <div class="carousel-caption d-none d-md-block w-100 position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-75 px-3 py-2 rounded-0" style="left:0; right:0;">
+                  <h5 class="text-white mb-1" style="font-size:1.1rem;">WiFi Dimmer Switch</h5>
+                  <p class="text-white mb-0" style="font-size:0.95rem;">Custom-designed WiFi-enabled dimmer switch for smart lighting control, featuring ESP8266 and mobile app integration.</p>
+                </div>
+              </div>
+              <!-- Add more carousel items as needed -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#aboutProjectsCarousel"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#aboutProjectsCarousel"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="mb-5">
+      <h2>Skills</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h5>Languages & Scripting</h5>
+          <div class="d-flex flex-wrap gap-3">
+            <div class="card border-primary shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-primary">C</div>
+            </div>
+            <div class="card border-success shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-success">C++</div>
+            </div>
+            <div class="card border-warning shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-warning">Java</div>
+            </div>
+            <div class="card border-info shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-info">Kotlin</div>
+            </div>
+            <div class="card border-secondary shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-secondary">Python</div>
+            </div>
+            <div class="card border-dark shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-dark">Shell Script</div>
+            </div>
+            <div class="card border-danger shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-danger">JavaScript</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h5>Frameworks & Tools</h5>
+          <div class="d-flex flex-wrap gap-3">
+            <div class="card border-primary shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-primary">Android SDK/NDK</div>
+            </div>
+            <div class="card border-success shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-success">Jetpack Compose</div>
+            </div>
+            <div class="card border-warning shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-warning">Gradle</div>
+            </div>
+            <div class="card border-info shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-info">CMake</div>
+            </div>
+            <div class="card border-secondary shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-secondary">Git</div>
+            </div>
+            <div class="card border-dark shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-dark">SQLite</div>
+            </div>
+            <div class="card border-danger shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-danger">MySQL</div>
+            </div>
+            <div class="card border-primary shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-primary">Firebase</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add this inside your Skills section, e.g. after Frameworks & Tools -->
+<div class="col-md-6 mb-4">
+  <h5>Android Development Skills</h5>
+  <div class="d-flex flex-wrap gap-3">
+    <div class="card border-success shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+      <div class="card-body p-2 text-center fw-semibold text-success">Jetpack Libraries</div>
+    </div>
+    <div class="card border-primary shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+      <div class="card-body p-2 text-center fw-semibold text-primary">Room DB</div>
+    </div>
+    <div class="card border-warning shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+      <div class="card-body p-2 text-center fw-semibold text-warning">Retrofit</div>
+    </div>
+    <div class="card border-info shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+      <div class="card-body p-2 text-center fw-semibold text-info">Hilt (DI)</div>
+    </div>
+    <div class="card border-secondary shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+      <div class="card-body p-2 text-center fw-semibold text-secondary">Firebase Libraries</div>
+    </div>
+    <div class="card border-dark shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+      <div class="card-body p-2 text-center fw-semibold text-dark">JUnit</div>
+    </div>
+    <div class="card border-danger shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+      <div class="card-body p-2 text-center fw-semibold text-danger">Robolectric</div>
+    </div>
+    <div class="card border-success shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+      <div class="card-body p-2 text-center fw-semibold text-success">Mockito</div>
+    </div>
+    <div class="card border-primary shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+      <div class="card-body p-2 text-center fw-semibold text-primary">Espresso</div>
+    </div>
+    <div class="card border-warning shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+      <div class="card-body p-2 text-center fw-semibold text-warning">Koin</div>
+    </div>
+  </div>
+</div>
+      <div class="row mt-2">
+        <div class="col-md-6 mb-4">
+          <h5>Interfaces & Protocols</h5>
+          <div class="d-flex flex-wrap gap-3">
+            <div class="card border-primary shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-primary">JNI</div>
+            </div>
+            <div class="card border-success shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-success">UART</div>
+            </div>
+            <div class="card border-warning shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-warning">SPI</div>
+            </div>
+            <div class="card border-info shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-info">I2C</div>
+            </div>
+            <div class="card border-secondary shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-secondary">I2S</div>
+            </div>
+            <div class="card border-dark shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-dark">TCP</div>
+            </div>
+            <div class="card border-danger shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-danger">UDP</div>
+            </div>
+            <div class="card border-primary shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-primary">HTTP</div>
+            </div>
+            <div class="card border-success shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-success">MQTT</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h5>Concepts & Practices</h5>
+          <div class="d-flex flex-wrap gap-3">
+            <div class="card border-primary shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-primary">SOLID Principles</div>
+            </div>
+            <div class="card border-success shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-success">RAII</div>
+            </div>
+            <div class="card border-warning shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-warning">Smart Pointers</div>
+            </div>
+            <div class="card border-info shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-info">Asynchronous Programming</div>
+            </div>
+            <div class="card border-secondary shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-secondary">MVVM</div>
+            </div>
+            <div class="card border-dark shadow bg-white mb-2" style="min-width:140px; border-radius:1rem;">
+              <div class="card-body p-2 text-center fw-semibold text-dark">Clean Architecture</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="mb-5">
+      <h2>Experience</h2>
+      <div class="row g-4">
+        <!-- Left Column: Role and responsibilities -->
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Software Engineer (Technical Lead Role)</h5>
+              <p class="text-muted mb-1">Enfec Solutions Pvt Ltd (Client: T-Mobile) &mdash; Sep 2020 – Present</p>
+              <ul class="mb-0">
+                <li>Technical Lead overseeing Android architecture, code quality, and team guidance.</li>
+                <li>Mentored developers, enforced SOLID principles, ensured maintainable codebase.</li>
+                <li>Maintained project health with stable CI/CD pipelines and regression prevention.</li>
+                <li>Implemented Jetpack-based Android features using MVVM and Kotlin.</li>
+                <li>Integrated native C++ via JNI for ICC authentication & EAP-AKA logic.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Key Projects -->
+        <div class="col-md-6">
+          <h6 class="text-muted">Key Projects</h6>
+          <ul class="list-unstyled">
+
+            <li class="mb-2">
+              <div>
+                <a class="text-decoration-none" data-bs-toggle="collapse" href="#project-vvm" role="button"
+                  aria-expanded="false" aria-controls="project-vvm">
+                  <strong>Visual Voicemail (T-Mobile)</strong> – Telecom Voicemail App
+                </a>
+                <div class="collapse mt-1" id="project-vvm">
+                  <small>
+                    A telecom carrier Android app that enables users to manage voicemail messages via a visual
+                    interface:
+                    <ul>
+                      <li>Implemented voicemail audio playback functionality.</li>
+                      <li>Integrated transcription and multilingual translation support for voicemail messages.</li>
+                      <li>Collaborated with cross-functional teams to deliver high-quality features.</li>
+                    </ul>
+                    <strong>Tech:</strong> Kotlin, MVVM, Jetpack, AndroidX, Retrofit
+                  </small>
+                </div>
+              </div>
+            </li>
+
+
+
+            <li class="mb-2">
+              <div>
+                <a class="text-decoration-none" data-bs-toggle="collapse" href="#project-secmod" role="button"
+                  aria-expanded="false" aria-controls="project-secmod">
+                  <strong>Security Module (T-Mobile)</strong> – Authentication SDK
+                </a>
+                <div class="collapse mt-1" id="project-secmod">
+                  <small>
+                    An Android library module focused on secure authentication:
+                    <ul>
+                      <li>Handles ICC/EAP-AKA authentication for SIM-based verification.</li>
+                      <li>JNI integration with native C++ libraries for telecom-level encryption logic.</li>
+                      <li>Packaged as a reusable SDK consumed by other internal T-Mobile apps.</li>
+                    </ul>
+                    <strong>Tech:</strong> Kotlin, JNI, C++, Hex/Byte manipulation, Unit Testing
+                  </small>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Left Column: Role and responsibilities -->
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Software Engineer</h5>
+              <p class="text-muted mb-1">Replete Health IT Services Pvt Ltd (Hyderabad) &mdash; Feb 2020 – Sep 2020</p>
+              <ul class="mb-0">
+                <li>Sole Android developer responsible for the entire app development lifecycle.</li>
+                <li>Designed app architecture, UI/UX, and implemented all core features.</li>
+                <li>Enabled health tracking, appointment booking, and doctor communication features.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Key Projects -->
+        <div class="col-md-6">
+          <h6 class="text-muted">Key Projects</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <div>
+                <a class="text-decoration-none" data-bs-toggle="collapse" href="#project-replete" role="button"
+                  aria-expanded="false" aria-controls="project-replete">
+                  <strong>Replete Health</strong> – Android Health App
+                </a>
+                <div class="collapse mt-1" id="project-replete">
+                  <small>
+                    A healthcare mobile application for health tracking and medical services:
+                    <ul>
+                      <li>Allowed users to monitor health status and access medical records.</li>
+                      <li>Enabled appointment scheduling and communication with doctors.</li>
+                      <li>Handled complete app lifecycle including architecture, development, and UI design.</li>
+                    </ul>
+                    <strong>Tech:</strong> Kotlin, MVVM, Retrofit, Firebase, Android UI XML
+                  </small>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Left Column: Role and responsibilities -->
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Software Engineer</h5>
+              <p class="text-muted mb-1">TECH2020 Solutions (Hyderabad) &mdash; Jul 2017 – Feb 2020</p>
+              <ul class="mb-0">
+                <li>Developed IoT smart home solutions with ESP8266, C++, and Android apps.</li>
+                <li>Handled end-to-end development — circuit design, firmware, mobile apps, and system integration.</li>
+                <li>Worked across embedded platforms, Android, and custom AOSP builds.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Key Projects -->
+        <div class="col-md-6">
+          <h6 class="text-muted">Key Projects</h6>
+          <ul class="list-unstyled">
+
+            <!-- Home Automation Devices -->
+            <li class="mb-2">
+              <div>
+                <a class="text-decoration-none" data-bs-toggle="collapse" href="#project-tech2020-home" role="button"
+                  aria-expanded="false" aria-controls="project-tech2020-home">
+                  <strong>Home Automation Devices</strong> – ESP8266-Based IoT
+                </a>
+                <div class="collapse mt-1" id="project-tech2020-home">
+                  <small>
+                    Designed and built smart devices like:
+                    <ul>
+                      <li>Wi-Fi Switch, Dimmer, IR Remote, RGB Controller, PIR Sensor, Thermostat.</li>
+                      <li>Managed circuit design (Altium), firmware (C++), and validation.</li>
+                      <li>Implemented OTA firmware update for remote field upgrades.</li>
+                    </ul>
+                    <strong>Tech:</strong> ESP8266, C++, Altium, OTA
+                  </small>
+                </div>
+              </div>
+            </li>
+
+            <!-- Z-Wave Controller -->
+            <li class="mb-2">
+              <div>
+                <a class="text-decoration-none" data-bs-toggle="collapse" href="#project-tech2020-zwave" role="button"
+                  aria-expanded="false" aria-controls="project-tech2020-zwave">
+                  <strong>Z-Wave Controller</strong> – Embedded Communication
+                </a>
+                <div class="collapse mt-1" id="project-tech2020-zwave">
+                  <small>
+                    Controller software for Z-Wave USB devices on embedded platforms:
+                    <ul>
+                      <li>Built native C/C++ software to interface with Z-Wave via serial port.</li>
+                      <li>Used MQTT and HTTP APIs for remote communication and app control.</li>
+                    </ul>
+                    <strong>Tech:</strong> C/C++, UART, MQTT, HTTP, Z-Wave
+                  </small>
+                </div>
+              </div>
+            </li>
+
+            <!-- Smart Home Android App -->
+            <li class="mb-2">
+              <div>
+                <a class="text-decoration-none" data-bs-toggle="collapse" href="#project-tech2020-app" role="button"
+                  aria-expanded="false" aria-controls="project-tech2020-app">
+                  <strong>Smart Home (Android App)</strong> – IoT Controller App
+                </a>
+                <div class="collapse mt-1" id="project-tech2020-app">
+                  <small>
+                    Android application for controlling smart home devices:
+                    <ul>
+                      <li>Implemented pairing, real-time status updates, and control logic.</li>
+                      <li>Integrated MQTT/HTTP protocols for backend communication with embedded devices.</li>
+                    </ul>
+                    <strong>Tech:</strong> Kotlin, Java, Android SDK, MQTT, Retrofit
+                  </small>
+                </div>
+              </div>
+            </li>
+
+            <!-- AOSP Customization -->
+            <li class="mb-2">
+              <div>
+                <a class="text-decoration-none" data-bs-toggle="collapse" href="#project-tech2020-aosp" role="button"
+                  aria-expanded="false" aria-controls="project-tech2020-aosp">
+                  <strong>AOSP Customization</strong> – Android System Branding
+                </a>
+                <div class="collapse mt-1" id="project-tech2020-aosp">
+                  <small>
+                    Customized Android Open Source Project (AOSP) builds for clients:
+                    <ul>
+                      <li>Modified boot logo, launcher app, and default configurations.</li>
+                      <li>Built custom system images for Android TV boxes.</li>
+                    </ul>
+                    <strong>Tech:</strong> AOSP, Android Build System, System UI, Embedded Android
+                  </small>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="education" class="mb-5">
+      <h2>Education</h2>
+      <div class="card shadow-sm border-0 mb-3">
+        <div class="card-body">
+          <h5 class="card-title mb-1">B.Tech in Electronics and Communication Engineering</h5>
+          <p class="text-muted mb-1">
+            Nalla Narasimha Reddy Education Society’s Group of Institutions, Hyderabad<br />
+            <small class="text-muted">Affiliated to Jawaharlal Nehru Technological University Hyderabad (JNTUH)</small>
+          </p>
+          <p class="text-muted mb-0">Graduated with Distinction — 2015</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards" class="mb-5">
+      <h2>Awards & Recognitions</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          🏆 Won <strong>1st Prize in Circuit Assembly</strong> at <em>Navikarana 2K13</em>, a college-level technical
+          fest.
+        </li>
+        <li class="list-group-item">
+          🏆 Won <strong>1st Prize in Electronic Model Exhibition</strong> at <em>Navikarana 2K13</em> for the project
+          “Home Appliance Control using Infrared”, which was also featured in local newspapers.
+        </li>
+        <li class="list-group-item">
+          🔧 Built an <strong>FM Transmitter</strong> through self-learning; successfully transmitted audio over FM
+          frequency.
+          Appreciated by professors for initiative and execution.
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects" class="mb-5">
+      <h2>Personal Projects</h2>
+      <div class="row g-4">
+        <!-- Video Editor Engine -->
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body">
+              <h5 class="card-title mb-1">
+                <a href="https://github.com/sureshM470/video-editor" target="_blank" class="text-decoration-none">
+                  Video Editor Engine
+                </a>
+              </h5>
+              <p class="mb-1 small text-muted">C++ backend for timeline-based video editing</p>
+              <p class="mb-0">
+                Built a C++ engine that enables timeline-based editing using FFmpeg as the core. Supports layered
+                video/audio tracks, clip trimming, and overlay/mixing logic.
+              </p>
+              <p class="mt-2 mb-0"><strong>Tech:</strong> C++, FFmpeg, Frame Composition, Timeline</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FFmpeg Cross Compilation Setup -->
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body">
+              <h5 class="card-title mb-1">
+                <a href="https://github.com/sureshM470/ffmpeg-crosscompile-cmake" target="_blank"
+                  class="text-decoration-none">
+                  FFmpeg Cross Compilation (CMake)
+                </a>
+              </h5>
+              <p class="mb-1 small text-muted">CMake-based build system for portable FFmpeg</p>
+              <p class="mb-0">
+                Created a general-purpose CMake setup to cross-compile FFmpeg for multiple platforms and architectures.
+              </p>
+              <p class="mt-2 mb-0"><strong>Tech:</strong> CMake, FFmpeg, Cross Compilation, Android NDK</p>
+            </div>
+          </div>
+        </div>
+        <!-- Smart Wireless Water Level Controller -->
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body">
+              <h5 class="card-title mb-1">
+                <a class="text-decoration-none">
+                  Smart Wireless Water Level Controller
+                </a>
+              </h5>
+              <p class="mb-1 small text-muted">Embedded system with wireless sensor and Android control</p>
+              <p class="mb-0">
+                Developed a two-part water level automation system:
+              <ul class="mb-1">
+                <li>Sensor node using ultrasonic sensor and NRF24L01 for wireless transmission.</li>
+                <li>ESP8266-based controller with relays for motor automation based on received data.</li>
+                <li>Remote control and monitoring through a custom Android app using HTTP communication.</li>
+              </ul>
+              </p>
+              <p class="mt-2 mb-0"><strong>Tech:</strong> ESP8266, NRF24L01, C++, Ultrasonic Sensor, HTTP, Android</p>
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <section id="contact" class="mb-5">
+      <h2 class="mb-4">Contact</h2>
+      <div class="card shadow-sm border-0 p-3">
+        <ul class="list-unstyled mb-0">
+          <li class="mb-3 d-flex align-items-center">
+            <i class="bi bi-envelope-fill text-primary me-2 fs-5"></i>
+            <a href="mailto:suresh.manepalli.111@gmail.com" class="text-decoration-none">
+              suresh.manepalli.111@gmail.com
+            </a>
+          </li>
+          <li class="mb-3 d-flex align-items-center">
+            <i class="bi bi-linkedin text-primary me-2 fs-5"></i>
+            <a href="https://www.linkedin.com/in/suresh-manepalli-7a86887a" class="text-decoration-none"
+              target="_blank">
+              linkedin.com/in/suresh-manepalli-7a86887a
+            </a>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="bi bi-github text-dark me-2 fs-5"></i>
+            <a href="https://github.com/sureshM470" class="text-decoration-none" target="_blank">
+              github.com/sureshM470
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Bootstrap JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
